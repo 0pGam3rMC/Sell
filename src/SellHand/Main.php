@@ -47,7 +47,7 @@ class Main extends PluginBase implements Listener{
 	}
 
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool {
-		switch(strtolower($cmd->getName())){
+		switch(strtolower($command->getName())){
 			case "sell":
 				/* Check if the player is permitted to use the command */
 				if($sender->hasPermission("sell") || $sender->hasPermission("sell.hand") || $sender->hasPermission("sell.all")){
