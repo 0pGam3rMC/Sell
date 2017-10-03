@@ -46,8 +46,8 @@ class Main extends PluginBase implements Listener{
 		$this->messages = new Config($this->getDataFolder() . "messages.yml", Config::YAML);
 	}
 
-	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
-		switch(strtolower($cmd->getName())){
+	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool {
+		switch(strtolower($command->getName())){
 			case "sell":
 				/* Check if the player is permitted to use the command */
 				if($sender->hasPermission("sell") || $sender->hasPermission("sell.hand") || $sender->hasPermission("sell.all")){
