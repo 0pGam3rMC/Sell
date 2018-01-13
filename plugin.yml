@@ -1,12 +1,12 @@
 name: Sell
-api: [3.0.0-ALPHA8]
+api: [3.0.0-ALPHA10]
 main: SellHand\Main
-version: 2.0
+version: 3.0
 author: Muqsit
 authors: [KairusDarkSeeker, Zeao]
 commands:
   sell:
-    description: "Sells the item in your hand or all of your inventory's contents"
+    description: "§bSells the item in your hand or all of your inventory's contents"
     permission: sell.command
 permissions:
   sell:
@@ -15,6 +15,6 @@ permissions:
       sell.hand:
         default: true
       sell.all:
-        default: true
+        default: false
       sell.command:
         default: true
